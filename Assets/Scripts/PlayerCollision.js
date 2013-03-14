@@ -2,7 +2,6 @@
 /*
 This script is responsible for managing all tasks the directly relate to player collision.
 */
-
 var playerDeathEffect : GameObject;
 
   //=====================
@@ -28,6 +27,10 @@ if (col.gameObject.tag == "boundary") {
 public function Kill() {
 //Destroy player and create player death effect
 	Instantiate(playerDeathEffect, transform.position, transform.rotation);
-	
+	GameController.lives -= 1;
+	if (GameController.lives > 0) {
+		GameObject.Find("GameController").GetComponent(GameController).Respawn();
+		GameObject.Find("GameController").GetComponent(GameController).SetDeathPos(transform.position.x, transform.position.y, transform.position.z);
+	}
 	Destroy(gameObject);
 }

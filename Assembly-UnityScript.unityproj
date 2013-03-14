@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\EnemyBehavior.js" />
      <Compile Include="Assets\Scripts\EnemyFiringPattern1.js" />
      <Compile Include="Assets\Scripts\EnemyMovementPattern1.js" />
+     <Compile Include="Assets\Scripts\GameController.js" />
      <Compile Include="Assets\Scripts\LaserBehaviorEnemy1.js" />
      <Compile Include="Assets\Scripts\LaserBehaviorPlayer.js" />
      <Compile Include="Assets\Scripts\PlayerCollision.js" />
