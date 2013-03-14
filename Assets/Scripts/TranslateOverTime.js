@@ -6,6 +6,5 @@ function Start () {
 }
 
 function Update () {
-// Slowly rotate the object around its X axis at 1 degree/second.
-    transform.Translate(Vector3.back * Time.deltaTime * speed, Space.World);
+    transform.Translate(0,0,speed * Time.deltaTime);
 }

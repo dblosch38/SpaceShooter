@@ -55,7 +55,7 @@ function Fire() {
 
 }
 
-function PowerUpLaserSpread(someBoolean : boolean) {
+function PowerUpLaserSpread() {
 //laserSpread mutator. Called by the PowerUpManager.
-	this.laserSpread = someBoolean;
+	this.laserSpread = true;
 }

@@ -17,9 +17,7 @@ function Update() {
 //Update related scripts when power up status changes
 	//Laser Spread
 	if (laserSpreadTimer > 0)
-		gameObject.GetComponent(PlayerLaserFire).PowerUpLaserSpread(true);
-	else
-		gameObject.GetComponent(PlayerLaserFire).PowerUpLaserSpread(false);
+		gameObject.GetComponent(PlayerLaserFire).PowerUpLaserSpread();
 }
 
   //=====================
